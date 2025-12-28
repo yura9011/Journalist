@@ -1,0 +1,78 @@
+.journal-transformer-modal {
+  padding: 20px;
+}
+
+.journal-transformer-modal .input-section {
+  margin-bottom: 20px;
+}
+
+.journal-transformer-modal textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-family: inherit;
+  resize: vertical;
+}
+
+.journal-transformer-modal .style-selector {
+  margin: 15px 0;
+}
+
+.journal-transformer-modal select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.journal-transformer-modal .output-section {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.journal-transformer-modal .output-section h4 {
+  margin-top: 0;
+  color: var(--text-accent);
+}
+
+.journal-transformer-modal .button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+
+.journal-transformer-modal .processing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-muted);
+}
+
+.journal-transformer-modal .spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--background-modifier-border);
+  border-top-color: var(--text-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.journal-transformer-settings .api-key-input {
+  width: 100%;
+  font-family: monospace;
+}
